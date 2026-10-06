@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran Workshop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Workshop Pemrograman Web</h1>
+    <nav>
+      <a href="index.html" class="aktif">Pendaftaran</a>
+      <a href="detail.html">Detail Pendaftar</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="box">
+      <h2>Form Pendaftaran</h2>
+
+      <form id="form-daftar" action="detail.html" method="GET">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="nim">NIM</label>
+        <input type="text" id="nim" name="nim" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="prodi">Program Studi</label>
+        <select id="prodi" name="prodi">
+          <option value="Teknik Informatika">Teknik Informatika</option>
+          <option value="Sains Data">Sains Data</option>
+          <option value="Teknik Elektro">Teknik Elektro</option>
+        </select>
+
+        <label>Jenis Kelamin</label>
+        <div class="pilihan">
+          <input type="radio" id="laki" name="jk" value="L" checked>
+          <label for="laki">Laki-laki</label>
+          <input type="radio" id="perempuan" name="jk" value="P">
+          <label for="perempuan">Perempuan</label>
+        </div>
+
+        <label for="alamat">Alamat</label>
+        <textarea id="alamat" name="alamat" rows="3"></textarea>
+
+        <div class="tombol">
+          <button type="reset">Reset</button>
+          <button type="submit">Daftar</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>Jeremi Pison Efrat Sianturi - 124140195</p>
+  </footer>
+</body>
+</html>
